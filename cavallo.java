@@ -14,7 +14,7 @@ public class Cavallo extends Thread {
         while (distanzaPercorsa < lunghezzaGara) {
             int passo = random.nextInt(10) + 1; // Generate random step
             distanzaPercorsa = Math.min(distanzaPercorsa + passo, lunghezzaGara);
-            // Simuliamo lo step di avanzamento, tra 1 e 10 metri per ogni cavallo
+            // step di avanzamento, tra 1 e 10 metri per ogni cavallo
             int passo = (int) (Math.random() * 10 + 1);
             distanzaPercorsa += passo;
             if (distanzaPercorsa > lunghezzaGara) {
@@ -22,7 +22,7 @@ public class Cavallo extends Thread {
             }
             System.out.println(nome + " ha percorso " + distanzaPercorsa + " metri.");
             try {
-                // Simuliamo un ritardo per ogni step di avanzamento (500ms)
+                // ritardo per ogni step di avanzamento (500ms)
                 Thread.sleep(500);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt(); // Restore interrupt status
