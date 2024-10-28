@@ -15,7 +15,7 @@ public class GaraDiCavalli {
         int numCavalli = scanner.nextInt();
         scanner.nextLine(); // Consuma il newline
         
-        // Lista dei cavalli (thread)
+        // Lista dei cavalli 
         List<Cavallo> cavalli = new ArrayList<>();
         
         // Input dei nomi dei cavalli
